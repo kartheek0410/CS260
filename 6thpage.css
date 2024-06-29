@@ -1,0 +1,115 @@
+*{
+    margin:0px;
+    padding: 0px;
+    color: rgb(14, 15, 16);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    position: relative;
+}
+.container{
+    background-image: url(iitp_class.jpg);
+    background-size: 100vw;
+    width:100vw;
+    height: 100vh;
+    position:fixed;
+}
+.mainbox{
+    
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    top: 1vh;
+    left: 10vw;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-inline-end: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 70px;
+     
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    left: 10px;
+    position:relative;
+   
+    gap:10px;
+    
+}
+.navbox,.navbox1,.navbox2{
+    display:flex;
+    margin-top:20px;
+    padding-bottom: 0px;
+}
+.box,.box1,.box2{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    color:brown;
+    word-wrap: break-word;
+}
+table,td,th{
+    padding: 6px;
+    border: 2px solid black;
+}
+@media screen and (max-width:900px) {
+    .box,.box1,.box2{
+        display: flex;
+        flex-direction: column;      
+    }
+    .nav{
+       
+        justify-content: center;
+        align-items: center;
+    }
+
+    table input,select{
+        padding: 2px;
+        width: 8vw;
+    }
+
+    th,td{
+        word-wrap: break-word;
+    }
+   
+   
+}
+table{
+    table-layout: fixed;
+    width: 75vw;
+}
+
+.linkbox{
+    display:grid;
+    grid-template-areas: "a b";
+    gap:60vw;
+}
+
+button:hover{
+    background-color:rgb(97, 247, 10); ;
+}
+button{
+    width: 10vw;
+    position:absolute;
+    bottom: 10px;
+    padding:10px;
+    background-color:  rgb(228, 196, 37);
+    border:2px solid rgb(72, 72, 71);
+    border-radius: 15px;
+    word-spacing: normal;
+}
+input{
+    padding:10px;
+    border-radius: 10px;
+    width:10vw;
+}

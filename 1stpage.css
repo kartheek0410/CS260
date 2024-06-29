@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(25, 28, 32)
+   
+}
+body{
+    position:relative;
+}
+
+.container{
+    background-image: url(iitp_class.jpg);
+    background-size: 100vw;
+    width:100vw;
+    height: 100vh;
+    position:fixed;
+}
+.mainbox{
+    width: 75vw;
+    background-color: rgba(250, 250, 250, 0.85);
+    position: relative;
+    top: 1vh;
+    left: 10vw;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-inline-end: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 70px;
+    
+}
+h3{
+    color: rgb(239, 239, 243);
+}
+button,input,textarea,select{
+    padding: 10px;
+}
+
+.box1{
+    background-color: beige;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "a b   c d";
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid black;
+    color:brown;
+}
+.box2,.box3,.box4{
+    background-color: beige;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "a b  c d";
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.box3{
+    grid-template-areas: "a b";
+
+}
+.box3_1,.box3_2{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    left: 10px;
+    position:relative;
+    gap:10px;
+    color: white;
+
+}
+
+select,input,textarea,option{
+    color: rgb(18, 31, 20);
+}
+
+@media screen and (max-width:900px) {
+    .box1,.box2,.box3,.box4{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+button{
+    width: 10vw;
+    position:absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color:  rgb(228, 196, 37);
+    border:2px solid rgb(72, 72, 71);
+    border-radius: 15px;
+
+}
+
+button:hover{
+    background-color:rgb(97, 247, 10); ;
+}
